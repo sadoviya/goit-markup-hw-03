@@ -31,6 +31,51 @@ ul {
   outline: 2px solid #2196f3;
 }
 
+/*---------- Починаємо флексити ----------*/
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header-list {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.header-contacts {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+/*---------- Закінчуємо флексити ----------*/
+
+/*---------- Починаємо маржити ----------*/
+.header-logo {
+  margin-right: 93px;
+}
+
+.header-list {
+  margin-right: 344px;
+}
+/*---------- Закінчуємо маржити ----------*/
+
+/*---------- Починаємо падіти ----------*/
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.hero-button {
+  padding: 10px 32px;
+}
+/*---------- Закінчуємо падіти ----------*/
+
 .link {
   text-decoration: none;
 }
@@ -57,8 +102,9 @@ ul {
   color: var(--pure-white-color);
   background-color: var(--accent-site-color);
   border-radius: 4px;
-  padding: 10px 32px;
+  /* тут падінг hero-button*/
   border: 0px;
+  /* додати розміри */
 }
 
 .hero-button:active {
@@ -87,6 +133,7 @@ ul {
   letter-spacing: 0.03em;
   color: #000000;
   text-decoration: none;
+  /* тут маржин header-logo*/
 }
 
 .half-logo {
