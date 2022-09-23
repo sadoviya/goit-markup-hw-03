@@ -28,9 +28,26 @@ ul {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  /* ЗАКОМЕНТУВАТИ ПЕРЕД ЗДАЧЕЮ */
-  outline: 2px solid #2196f3;
-  /* ЗАКОМЕНТУВАТИ ПЕРЕД ЗДАЧЕЮ */
+  /* outline: 2px solid #2196f3; */
+}
+
+.link {
+  text-decoration: none;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-site-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #ececec;
 }
 
 .header-container {
@@ -56,53 +73,6 @@ ul {
   margin-left: auto;
 }
 
-.link {
-  text-decoration: none;
-}
-
-.link:hover,
-.link:focus {
-  color: var(--accent-site-color);
-}
-
-.list {
-  list-style: none;
-}
-
-.btn {
-  cursor: pointer;
-  font-family: inherit;
-  /* Чи можна використовувати бордер 0? */
-  border: 0px solid transparent;
-  border-radius: 4px;
-}
-
-.hero-button:active {
-  background-color: #188ce8;
-}
-
-.filter-button {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  letter-spacing: 0.03em;
-  color: var(--master-text-color);
-  padding: 6px 22px;
-}
-
-.filter-button:hover,
-.filter-button:focus {
-  color: var(--pure-white-color);
-  background-color: var(--accent-site-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-.header {
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
-
 .header-logo {
   font-family: 'Raleway';
   font-weight: 700;
@@ -116,16 +86,6 @@ ul {
 
 .half-logo {
   color: var(--accent-site-color);
-}
-
-.footer-logo {
-  font-family: 'Raleway';
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--pure-white-color);
-  text-decoration: none;
 }
 
 .nav-link {
@@ -177,6 +137,18 @@ ul {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   padding: 10px 32px;
   margin-top: 30px;
+}
+
+.hero-button:active {
+  background-color: #188ce8;
+}
+
+.btn {
+  cursor: pointer;
+  font-family: inherit;
+  /* Чи можна використовувати бордер 0? */
+  border: 0px solid transparent;
+  border-radius: 4px;
 }
 
 .benefits-section {
@@ -239,8 +211,13 @@ ul {
 
 .member-item {
   background-color: var(--pure-white-color);
-  /* Дати цей падінг для фото */
-  /* padding-bottom: 108px; */
+  /* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2); */
+  border-radius: 0px 0px 4px 4px;
+}
+
+.img-item {
+  margin-bottom: 30px;
 }
 
 .member-title {
@@ -249,6 +226,7 @@ ul {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
 }
 
 .member-alt {
@@ -257,12 +235,33 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--slave-text-color);
+  margin-bottom: 30px;
 }
 
 .footer {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer-logo {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--pure-white-color);
+  text-decoration: none;
+}
+
+.address {
+  margin-top: 20px;
+}
+
+/* .address-list {} */
+
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .address-link {
@@ -292,6 +291,23 @@ ul {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
+}
+
+.filter-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: var(--master-text-color);
+  padding: 6px 22px;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  color: var(--pure-white-color);
+  background-color: var(--accent-site-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .project-title {
