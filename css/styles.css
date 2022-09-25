@@ -366,7 +366,7 @@ ul {
 .project-container {
   border: 1px solid #eeeeee;
   border-top: none;
-  padding: 20px 24px;
+  padding: 20px 24px 19px 24px;
 }
 
 .project-title {
@@ -375,6 +375,7 @@ ul {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--master-text-color);
+  margin-bottom: 4px;
 }
 
 .project-alt {
